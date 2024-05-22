@@ -1,5 +1,6 @@
 :root {
-    --fonte-principal: "Pixelify Sans"
+    --fonte-principal: "Pixelify Sans";
+    --azul: rgb(8, 38, 94);
 }
 
 
@@ -13,7 +14,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: rgb(8, 38, 94);
+    background-color: var(--azul);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -50,7 +51,7 @@ header {
 
 #new-quote {
     margin-top: 20px;
-    background-color: #333;
+    background-color: #0c829f;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -64,7 +65,7 @@ header {
 
 /* Rodapé */
 footer {
-    background-color: #333;
+    background-color: var(--azul);
     color: #fff;
     text-align: center;
     padding: 10px;
