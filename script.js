@@ -9,7 +9,9 @@ const quotes = [
     { quote: "Não deixe que o passado determine o seu futuro.", author: "- Eckhart Tolle", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/93a62ecd-6e54-4624-a4ee-a0fee75ca746" },
     { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia.", author: "- Robert Collier", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/a0a175a4-78b7-4716-bbe5-532925a6103f" },
     { quote: "Seu futuro começa com um simples passo em direção ao conhecimento.", author: "- 2°C", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/4bff56c8-a8fa-42c9-86f8-e7c4576cb00d" },
-    { quote: "Seja curioso, seja criativo, seja bem-sucedido. Tudo isso começa com o ato de estudar", author:"- 2°C", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/3edfb72d-daa1-4b94-ae75-ed5fdb83d20f" }
+    { quote: "Seja curioso, seja criativo, seja bem-sucedido. Tudo isso começa com o ato de estudar", author:"- 2°C", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/3edfb72d-daa1-4b94-ae75-ed5fdb83d20f" },
+    { quote: "A motivação te leva a começar. A determinação te faz continuar", author: "Profª Gabriela - Português", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/4893694c-68ad-4b24-b941-615997e26c0f"},
+    { quote: "Vencer é uma mistura de luta, esforço, otimismo e não desistir nunca", author: "Prof° Élio - Biologia", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/3a4ce975-9197-4cab-9788-12148020da09"},
 ];
 
 // Função para exibir uma nova frase
