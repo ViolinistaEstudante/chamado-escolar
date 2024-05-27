@@ -89,3 +89,25 @@ h1 {
     margin-bottom: 20px;
 }
 
+.avaliacao-botao {
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    margin-top: 20px;
+    background-color: #0c829f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    display: block;
+    margin: 0 auto; 
+}
+
+.avaliacao-ancora {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    margin: 0.5em auto;
+}
+
