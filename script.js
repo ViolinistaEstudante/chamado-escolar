@@ -15,10 +15,10 @@ const quotes = [
     { quote: "Estude, pois a caneta é mais leve do que a pá", author: "Profª Karol - Física", imageUrl:""},
     { quote: "O que você está fazendo por você?", author: "Prof° Sidnei - Filosofia", imageUrl:""},
     { quote: "Superação é quando te amassa a alma, e você ainda briga.", author: "Profª Danielli - Ed. Física", imageUrl: ""},
-    { quote: "Precisamos de vocês alunos, para o nosso futuro", author: "Profª Maria Marli", imageUrl: ""},
-    { quote: "União, dedicação, são fundamentais para seu futuro.", author: "Profº Luiz Paulo", imageUrl: ""},
+    { quote: "Precisamos de vocês alunos, para o nosso futuro", author: "Profª Maria Marli - Inglês", imageUrl: ""},
+    { quote: "União, dedicação, são fundamentais para seu futuro.", author: "Profº Luiz Paulo - Geografia", imageUrl: ""},
     { quote: "A educação pode ser a única ponte entre você e o sucesso", author: "Profª Érica - Química", imageUrl: ""},
-    { quote: "Apenas a educação tem o poder de livrar! Viva, todos os estudantes!!", imageUrl: ""}
+    { quote: "Apenas a educação tem o poder de livrar! Viva, todos os estudantes!!", author: "Prof° Victor - Matemática", imageUrl: ""}
 ];
 
 // Função para exibir uma nova frase
