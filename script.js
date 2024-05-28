@@ -12,13 +12,13 @@ const quotes = [
     { quote: "Seja curioso, seja criativo, seja bem-sucedido. Tudo isso começa com o ato de estudar", author:"- 2°C", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/3edfb72d-daa1-4b94-ae75-ed5fdb83d20f" },
     { quote: "A motivação te leva a começar. A determinação te faz continuar", author: "Profª Gabriela - Português", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/4893694c-68ad-4b24-b941-615997e26c0f"},
     { quote: "Vencer é uma mistura de luta, esforço, otimismo e não desistir nunca", author: "Prof° Élio - Biologia", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/3a4ce975-9197-4cab-9788-12148020da09"},
-    { quote: "Estude, pois a caneta é mais leve do que a pá", author: "Profª Karol - Física", imageUrl:""},
-    { quote: "O que você está fazendo por você?", author: "Prof° Sidnei - Filosofia", imageUrl:""},
-    { quote: "Superação é quando te amassa a alma, e você ainda briga.", author: "Profª Danielli - Ed. Física", imageUrl: ""},
-    { quote: "Precisamos de vocês alunos, para o nosso futuro", author: "Profª Maria Marli - Inglês", imageUrl: ""},
-    { quote: "União, dedicação, são fundamentais para seu futuro.", author: "Profº Luiz Paulo - Geografia", imageUrl: ""},
-    { quote: "A educação pode ser a única ponte entre você e o sucesso", author: "Profª Érica - Química", imageUrl: ""},
-    { quote: "Apenas a educação tem o poder de livrar! Viva, todos os estudantes!!", author: "Prof° Victor - Matemática", imageUrl: ""}
+    { quote: "Estude, pois a caneta é mais leve do que a pá", author: "Profª Karol - Física", imageUrl:"https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/5e994848-48ed-47f6-bf27-b62f0f04dce5"},
+    { quote: "O que você está fazendo por você?", author: "Prof° Sidnei - Filosofia", imageUrl:"https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/93510724-6223-4ecc-a774-263960d70f78"},
+    { quote: "Superação é quando te amassa a alma, e você ainda briga.", author: "Profª Danielli - Ed. Física", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/7c9e334f-c48d-46bf-972d-e14bbd1d516a"},
+    { quote: "Precisamos de vocês alunos, para o nosso futuro", author: "Profª Maria Marli - Inglês", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/47fffd72-03bb-48c9-8a69-99b8b5ca737a"},
+    { quote: "União, dedicação, são fundamentais para seu futuro.", author: "Profº Luiz Paulo - Geografia", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/a2a4d8ce-66ef-4c2f-84e0-f1f917c98597"},
+    { quote: "A educação pode ser a única ponte entre você e o sucesso", author: "Profª Érica - Química", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/746a148b-3694-48cf-90d3-b5cff8369e49"},
+    { quote: "Apenas a educação tem o poder de livrar! Viva todos os estudantes!!", author: "Prof° Victor - Matemática", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/9141c189-f7cb-463f-b350-6a0a2ba43437"}
 ];
 
 // Função para exibir uma nova frase

@@ -87,6 +87,7 @@ h1 {
 .quote-image {
     max-width: 100px;
     margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 
