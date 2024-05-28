@@ -12,6 +12,13 @@ const quotes = [
     { quote: "Seja curioso, seja criativo, seja bem-sucedido. Tudo isso começa com o ato de estudar", author:"- 2°C", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/3edfb72d-daa1-4b94-ae75-ed5fdb83d20f" },
     { quote: "A motivação te leva a começar. A determinação te faz continuar", author: "Profª Gabriela - Português", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/4893694c-68ad-4b24-b941-615997e26c0f"},
     { quote: "Vencer é uma mistura de luta, esforço, otimismo e não desistir nunca", author: "Prof° Élio - Biologia", imageUrl: "https://github.com/ViolinistaEstudante/chamado-escolar/assets/132099734/3a4ce975-9197-4cab-9788-12148020da09"},
+    { quote: "Estude, pois a caneta é mais leve do que a pá", author: "Profª Karol - Física", imageUrl:""},
+    { quote: "O que você está fazendo por você?", author: "Prof° Sidnei - Filosofia", imageUrl:""},
+    { quote: "Superação é quando te amassa a alma, e você ainda briga.", author: "Profª Danielli - Ed. Física", imageUrl: ""},
+    { quote: "Precisamos de vocês alunos, para o nosso futuro", author: "Profª Maria Marli", imageUrl: ""},
+    { quote: "União, dedicação, são fundamentais para seu futuro.", author: "Profº Luiz Paulo", imageUrl: ""},
+    { quote: "A educação pode ser a única ponte entre você e o sucesso", author: "Profª Érica - Química", imageUrl: ""},
+    { quote: "Apenas a educação tem o poder de livrar! Viva, todos os estudantes!!", imageUrl: ""}
 ];
 
 // Função para exibir uma nova frase
