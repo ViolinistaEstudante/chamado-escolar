@@ -90,4 +90,20 @@ h1 {
     margin: 0 auto;
 }
 
+.formulário-botão {
+    margin-top: 20px;
+    background-color: #0c829f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulário-âncora {
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+}
+
 
