@@ -40,3 +40,18 @@ document.getElementById('new-quote').addEventListener('click', displayNewQuote);
 
 // Exibir a primeira frase
 displayNewQuote();
+
+// Divisória de códigos
+
+// Mostrar o modal
+function showModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+}
+
+// Ocultar o modal
+function hideModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+

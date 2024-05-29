@@ -98,6 +98,8 @@ h1 {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 .formulário-âncora {
@@ -105,5 +107,36 @@ h1 {
     color: white;
     margin: 0 auto;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 1em;
+}
+
+.pontos_de_coleta {
+    padding: 1.5em;
+}
+
+.close-button {
+    font-size: 50px;
+    padding: 7.2em;
+}
+
 
 

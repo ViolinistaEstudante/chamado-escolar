@@ -14,12 +14,13 @@
     <header>
         <h1>Frases de Motivação</h1>
         <marquee class="texto_animado">Frases do dia para te motivar nos estudos</marquee>
+        <butoon onclick="showModal()" class="formulário-botão">Novidades</butoon>
     </header>
 
     <main>
         <div class="quote-container">
             <div class="quote-box">
-                <img src="" alt="Imagem motivacional" class="quote-image" style="display: none; text-align: center;">
+                <img src="" alt="Imagem motivacional" class="quote-image"">
                 <p class="quote"></p>
                 <p class="author"></p>
             </div>
@@ -27,9 +28,35 @@
             
         </div>
     </main>
-    <butoon class="formulário-botão"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7qyMpcNi1JvzAV6mg76hE_I20zRda2XnTzINf2abouo_3BQ/viewform?usp=sf_link" class="formulário-âncora">Avalie nosso site!! - Formulário</a></butoon>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="hideModal()">&times;</span>
+            <h2>Novidades!!</h2>
+            <ul class="novidades">
+                <li>
+                    💬 - Sete novas frases
+                </li>
+                <li>
+                    📋 - Formulário de avaliação
+                </li>
+                <li>
+                    💻 - Área de novidades
+                </li>
+            </ul>
+            <h2>Próxima Atualização!!</h2>
+            <ul class="novidades">
+                <li>
+                    👋 - Acessibilidade
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
     <footer>
-        <p> Todos os direitos reservados para a turma 2°C - &copy;CCM Olivo Fracaro </p>
+       <butoon class="formulário-botão"><a href="https://docs.google.com/forms/d/e/1FAIpQLSc7qyMpcNi1JvzAV6mg76hE_I20zRda2XnTzINf2abouo_3BQ/viewform?usp=sf_link" class="formulário-âncora">Avalie nosso site!! - Formulário</a></butoon>
+       <p> Todos os direitos reservados para a turma 2°C - &copy;CCM Olivo Fracaro </p>
     </footer>
 
     <script src="script.js"></script>
