@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases de Motivação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/ícone.png">
+</head>
+<body>
+    <header>
+        <h1>Frases de Motivação</h1>
+        <marquee class="texto_animado">Frases do dia para te motivar nos estudos</marquee>
+        <button onclick="showModal()" class="formulário-botão">Novidades</button>
+    </header>
+
+    <main>
+        <div class="quote-container">
+            <div class="quote-box">
+                <img src="" alt="Imagem motivacional" class="quote-image">
+                <p class="quote"></p>
+                <p class="author"></p>
+            </div>
+
+            <div class="select-group">
+                <label for="quote-group">Selecione o grupo de frases:</label>
+                <select id="quote-group">
+                    <option value="all">Todos</option>
+                    <option value="professors">Professores</option>
+                    <option value="students">Alunos</option>
+                    <option value="external">Autores Externos</option>
+                </select>
+            </div>
+
+            <button id="new-quote" class="botão">Nova Frase</button>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="hideModal()">&times;</span>
+            <h2>Novidades!!</h2>
+            <ul class="novidades">
+                <li>
+                    📋 - Formulário atualizado!
+                </li>
+                <li>
+                    📋 - Divisão de frases entre professores, alunos e autores externos!
+                </li>
+            </ul>
+            <h2>Próxima Atualização!!</h2>
+            <ul class="novidades">
+                <li>
+                    👋 - Ainda pensando na próxima atualização!!
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <button class="formulário-botão"><a href="https://forms.gle/6QYMwxUBhTnita7J8" class="formulário-âncora">Avalie nosso site!! - Formulário</a></button>
+        <p> Todos os direitos reservados para a turma 2°C - &copy;CCM Olivo Fracaro </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

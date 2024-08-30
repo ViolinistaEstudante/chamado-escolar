@@ -1,0 +1,169 @@
+:root {
+    --fonte-principal: "Pixelify Sans";
+    --azul: rgb(8, 38, 94);
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    background-color: #2f59da;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--azul);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Conteúdo principal */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 120px);
+}
+
+.quote-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 80%;
+}
+
+.quote {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 18px;
+    color: #888;
+}
+
+#new-quote {
+    margin-top: 20px;
+    background-color: #0c829f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-quote:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.texto_animado {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.botão {
+    font-family: var(--fonte-principal);
+}
+
+.quote-image {
+    max-width: 100px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+.formulário-botão {
+    margin-top: 20px;
+    background-color: #0c829f;
+    font-family: var(--fonte-principal);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.formulário-âncora {
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 1em;
+}
+
+.pontos_de_coleta {
+    padding: 1.5em;
+}
+
+.close-button {
+    font-size: 50px;
+    padding: 14em;
+}
+
+/* Estilo para o container do seletor */
+.select-group {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.select-group label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.select-group select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #0c829f;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.select-group select:focus {
+    outline: none;
+    border-color: #555;
+}
