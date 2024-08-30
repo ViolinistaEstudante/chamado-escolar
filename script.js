@@ -17,13 +17,13 @@ const studentQuotes = [
 ];
 
 const externalAuthorQuotes = [
-    { quote: "Não deixe que o medo de errar o impeça de tentar.", author: "- Brian Tracy", imageUrl: "" },
-    { quote: "A chave do sucesso é a persistência.", author: "- Napoleon Hill", imageUrl: "" },
-    { quote: "Você é capaz de muito mais do que imagina.", author: "- Zig Ziglar", imageUrl: "" },
-    { quote: "Sempre há um caminho quando há vontade.", author: "- Pablo Neruda", imageUrl: "" },
-    { quote: "A única limitação que você tem é a que você impõe a si mesmo.", author: "- Les Brown", imageUrl: "" },
-    { quote: "Não deixe que o passado determine o seu futuro.", author: "- Eckhart Tolle", imageUrl: "" },
-    { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia.", author: "- Robert Collier", imageUrl: "" },
+    { quote: "Não deixe que o medo de errar o impeça de tentar.", author: "- Brian Tracy", imageUrl: "https://github.com/user-attachments/assets/a63c9604-79e7-4b84-99e4-4fb2a013a8f9" },
+    { quote: "A chave do sucesso é a persistência.", author: "- Napoleon Hill", imageUrl: "https://github.com/user-attachments/assets/318ac348-fd0c-42ac-a4d0-e9b2a55c3de7" },
+    { quote: "Você é capaz de muito mais do que imagina.", author: "- Zig Ziglar", imageUrl: "https://github.com/user-attachments/assets/c706da90-c2ec-4af0-a3a8-2157a9d87dab" },
+    { quote: "Sempre há um caminho quando há vontade.", author: "- Pablo Neruda", imageUrl: "https://github.com/user-attachments/assets/62185634-8cb5-468e-bd21-ed2560ed3255" },
+    { quote: "A única limitação que você tem é a que você impõe a si mesmo.", author: "- Les Brown", imageUrl: "https://github.com/user-attachments/assets/495ead9b-fdf8-4df3-9abf-b278104fddc7" },
+    { quote: "Não deixe que o passado determine o seu futuro.", author: "- Eckhart Tolle", imageUrl: "https://github.com/user-attachments/assets/132d21a6-1b4e-43ef-af79-746c57f26a50" },
+    { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia.", author: "- Robert Collier", imageUrl: "https://github.com/user-attachments/assets/ade78109-632d-487f-a140-ea146cccfdc2" },
 ];
 
 // Função para exibir uma nova frase
