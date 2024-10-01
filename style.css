@@ -1,5 +1,5 @@
 :root {
-    --fonte-principal: "Pixelify Sans";
+    --fonte-principal: "Halant";
     --azul: rgb(8, 38, 94);
 }
 
@@ -96,6 +96,21 @@ h1 {
     margin-top: 20px;
     background-color: #0c829f;
     font-family: var(--fonte-principal);
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.formulário-botão2 {
+    margin-top: 20px;
+    background-color: #0c829f;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -167,4 +182,9 @@ h1 {
 .select-group select:focus {
     outline: none;
     border-color: #555;
+}
+
+.redes-sociais {
+    text-decoration: none;
+    color: white;
 }

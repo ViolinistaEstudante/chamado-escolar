@@ -10,7 +10,8 @@ const professorQuotes = [
     { quote: "Apenas a educação tem o poder de livrar!", author: "Prof° Victor - Matemática", imageUrl: "https://github.com/user-attachments/assets/acf3075d-b8da-46d1-9493-9a61a567af25"},
     { quote: "Cada um tem a visão da montanha que subiu", author: "Profª Karine - História", imageUrl: "https://github.com/user-attachments/assets/b52ed346-3b8a-439e-8408-9fdf48bab63c"},
     { quote: "A vontade de se preparar precisa ser maior que a vontade de vencer", author: "Profª Elisângela - Português", imageUrl: "https://github.com/user-attachments/assets/ac668320-b7cd-4c5e-b8c8-5154e43493e2"},
-    { quote: "A vontade de se preparar precisa ser maior que a vontade de vencer", author: "Profª Elisabeth - História", imageUrl: "https://github.com/user-attachments/assets/ac668320-b7cd-4c5e-b8c8-5154e43493e2"}
+    { quote: "A vontade de se preparar precisa ser maior que a vontade de vencer", author: "Profª Elisabeth - História", imageUrl: "https://github.com/user-attachments/assets/ac668320-b7cd-4c5e-b8c8-5154e43493e2"},
+    { quote: "A vida torna-se mais simples quando o foco está bem definido", author: "Prof° José Gabriel - Geografia", imageUrl:"https://github.com/user-attachments/assets/b1537056-9bd3-42a0-9795-fadfacfcb497"}
 ];
 
 const studentQuotes = [
