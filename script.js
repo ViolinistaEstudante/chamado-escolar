@@ -29,6 +29,12 @@ const externalAuthorQuotes = [
     { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia.", author: "- Robert Collier", imageUrl: "https://github.com/user-attachments/assets/ade78109-632d-487f-a140-ea146cccfdc2" },
 ];
 
+const pedagogasQuotes = [
+    {
+
+    }
+]
+
 // Função para exibir uma nova frase
 function displayNewQuote() {
     const selectedGroup = document.getElementById('quote-group').value;
@@ -40,8 +46,10 @@ function displayNewQuote() {
         quotesArray = studentQuotes;
     } else if (selectedGroup === 'external') {
         quotesArray = externalAuthorQuotes;
+    } else if (selectedGroup === 'pedagogas') {
+        quotesArray = pedagogasQuotes;
     } else {
-        quotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes];
+        quotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes, ...pedagogasQuotes];
     }
 
     const randomIndex = Math.floor(Math.random() * quotesArray.length);

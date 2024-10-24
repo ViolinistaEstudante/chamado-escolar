@@ -153,7 +153,11 @@ h1 {
 
 .close-button {
     font-size: 50px;
-    padding: 14em;
+    padding: 12.5em;
+}
+
+.close-button > span {
+    cursor: pointer;
 }
 
 /* Estilo para o container do seletor */
