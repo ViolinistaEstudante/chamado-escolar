@@ -192,3 +192,32 @@ h1 {
     text-decoration: none;
     color: white;
 }
+
+/* Estilos para o vídeo dentro do modal */
+.video-container {
+    position: relative; /* Torna o contêiner do vídeo o ponto de referência para o título */
+    margin-top: 20px; /* Espaço acima do vídeo */
+    display: flex;
+    justify-content: center; /* Centraliza o vídeo horizontalmente */
+    align-items: center; /* Centraliza o vídeo verticalmente */
+}
+
+/* Título sobre o vídeo */
+.video-container h2 {
+    position: absolute; /* Posiciona o título sobre o vídeo */
+    top: 0.1px; /* Distância do topo do contêiner */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para que o título fique centralizado */
+    color: #fff; /* Cor do texto do título */
+    font-size: 24px; /* Tamanho do texto do título */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto para destacar */
+}
+
+.video-container video {
+    max-width: 100%; /* O vídeo se ajustará ao tamanho máximo da tela */
+    height: auto; /* A altura será ajustada proporcionalmente */
+    border-radius: 15px; /* Arredonda os cantos do vídeo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar destaque */
+    border: none; /* Remove a borda do vídeo */
+}

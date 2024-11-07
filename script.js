@@ -11,7 +11,8 @@ const professorQuotes = [
     { quote: "Cada um tem a visão da montanha que subiu", author: "Profª Karine - História", imageUrl: "https://github.com/user-attachments/assets/b52ed346-3b8a-439e-8408-9fdf48bab63c"},
     { quote: "A vontade de se preparar precisa ser maior que a vontade de vencer", author: "Profª Elisângela - Português", imageUrl: "https://github.com/user-attachments/assets/ac668320-b7cd-4c5e-b8c8-5154e43493e2"},
     { quote: "A vontade de se preparar precisa ser maior que a vontade de vencer", author: "Profª Elisabeth - História", imageUrl: "https://github.com/user-attachments/assets/ac668320-b7cd-4c5e-b8c8-5154e43493e2"},
-    { quote: "A vida torna-se mais simples quando o foco está bem definido", author: "Prof° José Gabriel - Geografia", imageUrl:"https://github.com/user-attachments/assets/b1537056-9bd3-42a0-9795-fadfacfcb497"}
+    { quote: "A vida torna-se mais simples quando o foco está bem definido", author: "Prof° José Gabriel - Geografia", imageUrl:"https://github.com/user-attachments/assets/b1537056-9bd3-42a0-9795-fadfacfcb497"},
+    { quote: "Supere os obstáculos, quebre as barreiras, dê o melhor de si, expanda sua consciência através do conhecimento, pois ele liberta!", author: "Profª Marisa - Sociologia", imageUrl: "https://github.com/user-attachments/assets/931925f4-35f0-45bb-b6cd-3c7f9ecf0492"}
 ];
 
 const studentQuotes = [
@@ -29,12 +30,6 @@ const externalAuthorQuotes = [
     { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia.", author: "- Robert Collier", imageUrl: "https://github.com/user-attachments/assets/ade78109-632d-487f-a140-ea146cccfdc2" },
 ];
 
-const pedagogasQuotes = [
-    {
-
-    }
-]
-
 // Função para exibir uma nova frase
 function displayNewQuote() {
     const selectedGroup = document.getElementById('quote-group').value;
@@ -46,10 +41,8 @@ function displayNewQuote() {
         quotesArray = studentQuotes;
     } else if (selectedGroup === 'external') {
         quotesArray = externalAuthorQuotes;
-    } else if (selectedGroup === 'pedagogas') {
-        quotesArray = pedagogasQuotes;
     } else {
-        quotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes, ...pedagogasQuotes];
+        quotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes];
     }
 
     const randomIndex = Math.floor(Math.random() * quotesArray.length);
