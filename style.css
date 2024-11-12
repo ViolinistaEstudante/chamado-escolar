@@ -1,5 +1,5 @@
 :root {
-    --fonte-principal: "Halant";
+    --fonte-principal: "Lexend";
     --azul: rgb(8, 38, 94);
 }
 
@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #2f59da;
+    overflow-x: hidden;
 }
 
 /* Cabeçalho */
@@ -136,6 +137,7 @@ h1 {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
 }
 
 .modal-content {
@@ -154,10 +156,6 @@ h1 {
 .close-button {
     font-size: 50px;
     padding: 12.5em;
-}
-
-.close-button > span {
-    cursor: pointer;
 }
 
 /* Estilo para o container do seletor */
