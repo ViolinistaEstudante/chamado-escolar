@@ -21,6 +21,19 @@ header {
     text-align: center;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 478px;
+    padding-bottom: 5px;
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+}
+
 /* Conteúdo principal */
 .quote-container {
     display: flex;
@@ -75,11 +88,15 @@ footer {
 .texto_animado {
     font-size: 24px;
     font-weight: 700;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 h1 {
     font-weight: 700;
+}
+
+li, option, label, select {
+    font-family: "Lexend";
 }
 
 .botão {

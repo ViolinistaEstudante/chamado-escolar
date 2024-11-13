@@ -12,12 +12,17 @@ const professorQuotes = [
     { quote: "A vontade de se preparar precisa ser maior que a vontade de vencer", author: "Profª Elisângela - Português", imageUrl: "https://github.com/user-attachments/assets/ac668320-b7cd-4c5e-b8c8-5154e43493e2"},
     { quote: "A vontade de se preparar precisa ser maior que a vontade de vencer", author: "Profª Elisabeth - História", imageUrl: "https://github.com/user-attachments/assets/ac668320-b7cd-4c5e-b8c8-5154e43493e2"},
     { quote: "A vida torna-se mais simples quando o foco está bem definido", author: "Prof° José Gabriel - Geografia", imageUrl:"https://github.com/user-attachments/assets/b1537056-9bd3-42a0-9795-fadfacfcb497"},
-    { quote: "Supere os obstáculos, quebre as barreiras, dê o melhor de si, expanda sua consciência através do conhecimento, pois ele liberta!", author: "Profª Marisa - Sociologia", imageUrl: "https://github.com/user-attachments/assets/931925f4-35f0-45bb-b6cd-3c7f9ecf0492"}
+    { quote: "Supere os obstáculos, quebre as barreiras, dê o melhor de si, expanda sua consciência através do conhecimento, pois ele liberta!", author: "Profª Marisa - Sociologia", imageUrl: "https://github.com/user-attachments/assets/931925f4-35f0-45bb-b6cd-3c7f9ecf0492"},
+    { quote: "Cultive seu próprio jardim, em vez de esperar que alguém traga flores.", author: "Prof° Alex - Matemática II", imageUrl: "https://github.com/user-attachments/assets/819ef951-3eb2-4264-9ccf-670253ddefa5"},
+    { quote: "Seu talento é a chave para abrir novas portas. Continue criando!", author: "Profª Raiandra - Arte", imageUrl: "https://github.com/user-attachments/assets/13daf562-935a-413c-bd73-1d2cdeb8fb19"},
+    { quote: "Viver é algo raro no mundo; muitas pessoas apenas existem", author: "Profª Andréia - Português I", imageUrl: "https://github.com/user-attachments/assets/9e483056-09d3-4417-8e18-81bcc89bde06"},
+    { quote: "Nesse mundo, o sucesso começa pela nossa intenção; e tudo se determina pelo nosso espírito.", author: "Prof° Ederson - Educação Financeira", imageUrl: "https://github.com/user-attachments/assets/45a8f439-2143-469e-8d29-ee590170381b"}
 ];
 
 const studentQuotes = [
     { quote: "Seu futuro começa com um simples passo em direção ao conhecimento.", author: "Estudantes - 2°C", imageUrl: "https://github.com/user-attachments/assets/f4eb6355-86cd-4569-8e38-c3d60f2861c1" },
     { quote: "Seja curioso, seja criativo, seja bem-sucedido. Tudo isso começa com o ato de estudar", author:"Estudantes - 2°C", imageUrl: "https://github.com/user-attachments/assets/e4e76ff1-d3ca-4167-83c4-1b2c31708fb4" },
+    { quote: "Aproveite as oportunidades, em vez de esperar apenas pelo que deseja.", author: "Estudantes - 2°C", imageUrl: "https://github.com/user-attachments/assets/d21bb987-b54b-48d0-afdf-d592cfbb0e18"}
 ];
 
 const externalAuthorQuotes = [
@@ -30,6 +35,10 @@ const externalAuthorQuotes = [
     { quote: "O sucesso é a soma de pequenos esforços repetidos dia após dia.", author: "- Robert Collier", imageUrl: "https://github.com/user-attachments/assets/ade78109-632d-487f-a140-ea146cccfdc2" },
 ];
 
+const geralQuotes = [
+    {quote: "Ser pontual é demonstrar respeito pelo tempo dos outros e pelo próprio compromisso com os seus objetivos.", author: "Cb. Romoaldo", imageUrl: "https://github.com/user-attachments/assets/d5d546f0-3c14-424d-b185-c7f2fa8b14ed"}
+]
+
 // Função para exibir uma nova frase
 function displayNewQuote() {
     const selectedGroup = document.getElementById('quote-group').value;
@@ -41,8 +50,10 @@ function displayNewQuote() {
         quotesArray = studentQuotes;
     } else if (selectedGroup === 'external') {
         quotesArray = externalAuthorQuotes;
+    } else if (selectedGroup === 'geral') {
+        quotesArray = geralQuotes;
     } else {
-        quotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes];
+        quotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes, ...geralQuotes];
     }
 
     const randomIndex = Math.floor(Math.random() * quotesArray.length);
