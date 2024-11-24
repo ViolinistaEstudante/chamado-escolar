@@ -16,13 +16,15 @@ const professorQuotes = [
     { quote: "Cultive seu próprio jardim, em vez de esperar que alguém traga flores.", author: "Prof° Alex - Matemática II", imageUrl: "https://github.com/user-attachments/assets/819ef951-3eb2-4264-9ccf-670253ddefa5"},
     { quote: "Seu talento é a chave para abrir novas portas. Continue criando!", author: "Profª Raiandra - Arte", imageUrl: "https://github.com/user-attachments/assets/13daf562-935a-413c-bd73-1d2cdeb8fb19"},
     { quote: "Viver é algo raro no mundo; muitas pessoas apenas existem", author: "Profª Andréia - Português I", imageUrl: "https://github.com/user-attachments/assets/9e483056-09d3-4417-8e18-81bcc89bde06"},
-    { quote: "Nesse mundo, o sucesso começa pela nossa intenção; e tudo se determina pelo nosso espírito.", author: "Prof° Ederson - Educação Financeira", imageUrl: "https://github.com/user-attachments/assets/45a8f439-2143-469e-8d29-ee590170381b"}
+    { quote: "Nesse mundo, o sucesso começa pela nossa intenção; e tudo se determina pelo nosso espírito.", author: "Prof° Ederson - Educação Financeira", imageUrl: "https://github.com/user-attachments/assets/45a8f439-2143-469e-8d29-ee590170381b"},
+    { quote: "Cada dia na escola é uma nova oportunidade para aprender, crescer e construir o futuro que você sonha", author: "Profª Patrícia - Matemática", imageUrl:"https://github.com/user-attachments/assets/894a5dd5-3a91-4349-ac5f-f2b3367ad0ed"},
+
 ];
 
 const studentQuotes = [
-    { quote: "Seu futuro começa com um simples passo em direção ao conhecimento.", author: "Estudantes - 2°C", imageUrl: "https://github.com/user-attachments/assets/f4eb6355-86cd-4569-8e38-c3d60f2861c1" },
-    { quote: "Seja curioso, seja criativo, seja bem-sucedido. Tudo isso começa com o ato de estudar", author:"Estudantes - 2°C", imageUrl: "https://github.com/user-attachments/assets/e4e76ff1-d3ca-4167-83c4-1b2c31708fb4" },
-    { quote: "Aproveite as oportunidades, em vez de esperar apenas pelo que deseja.", author: "Estudantes - 2°C", imageUrl: "https://github.com/user-attachments/assets/d21bb987-b54b-48d0-afdf-d592cfbb0e18"}
+    { quote: "Seu futuro começa com um simples passo em direção ao conhecimento.", author: "Estudantes", imageUrl: "https://github.com/user-attachments/assets/f4eb6355-86cd-4569-8e38-c3d60f2861c1" },
+    { quote: "Seja curioso, seja criativo, seja bem-sucedido. Tudo isso começa com o ato de estudar", author:"Estudantes", imageUrl: "https://github.com/user-attachments/assets/e4e76ff1-d3ca-4167-83c4-1b2c31708fb4" },
+    { quote: "Aproveite as oportunidades, em vez de esperar apenas pelo que deseja.", author: "Estudantes", imageUrl: "https://github.com/user-attachments/assets/d21bb987-b54b-48d0-afdf-d592cfbb0e18"}
 ];
 
 const externalAuthorQuotes = [
@@ -36,28 +38,38 @@ const externalAuthorQuotes = [
 ];
 
 const geralQuotes = [
-    {quote: "Ser pontual é demonstrar respeito pelo tempo dos outros e pelo próprio compromisso com os seus objetivos.", author: "Cb. Romoaldo", imageUrl: "https://github.com/user-attachments/assets/d5d546f0-3c14-424d-b185-c7f2fa8b14ed"}
+    { quote: "Ser pontual é demonstrar respeito pelo tempo dos outros e pelo próprio compromisso com os seus objetivos.", author: "Cb. Romoaldo", imageUrl: "https://github.com/user-attachments/assets/d5d546f0-3c14-424d-b185-c7f2fa8b14ed"},
+    { quote: "Não falte, para que sua falta não faça falta.", author: "Cb. Hartman", imageUrl: "https://github.com/user-attachments/assets/7d69b531-0244-4085-9ec3-1ac4cf3f0012"},
+    { quote: "O conhecimento não é algo que adquire sem esforço, demanda tempo, dedicação e abdicação", author: "Ten. Rossi", imageUrl: "https://github.com/user-attachments/assets/865d7c6d-3843-4bcc-ad30-4a39f56f0e09"},
+    { quote: "Você é capaz de ir além do que imagina", author: "Pedagoga Direne", imageUrl: "https://github.com/user-attachments/assets/17a92454-ff8a-481f-9559-94a8f47b1788"},
+    { quote: "É preciso amar as pessoas como se não houvesse amanhã.", author: "Pedagoga Elisa", imageUrl: "https://github.com/user-attachments/assets/d23b654c-de63-4745-93de-94c4a8fcd5f1"},
+    { quote: "Pra quem tem fé, a vida não tem fim.", author: "Pedagoga Fernanda", imageUrl: "https://github.com/user-attachments/assets/8d3db4f3-5be3-4079-87a7-10eec261699f"},
+    {quote : "Todos os dias você se supera de alguma forma. Valorize suas pequenas vitórias", author: "Pedagoga Manuella", imageUrl: "https://github.com/user-attachments/assets/54f204f0-9c8c-436a-a3b7-8c430d7efef5"}
 ]
 
-// Função para exibir uma nova frase
-function displayNewQuote() {
-    const selectedGroup = document.getElementById('quote-group').value;
-    let quotesArray = [];
+// Variáveis globais para rastrear a posição atual da frase
+let currentIndex = 0;
+let currentQuotesArray = [];
 
+// Função para exibir a próxima frase em sequência
+function displayNextQuote() {
+    const selectedGroup = document.getElementById('quote-group').value;
+    
+    // Seleciona o grupo de frases com base na escolha
     if (selectedGroup === 'professors') {
-        quotesArray = professorQuotes;
+        currentQuotesArray = professorQuotes;
     } else if (selectedGroup === 'students') {
-        quotesArray = studentQuotes;
+        currentQuotesArray = studentQuotes;
     } else if (selectedGroup === 'external') {
-        quotesArray = externalAuthorQuotes;
+        currentQuotesArray = externalAuthorQuotes;
     } else if (selectedGroup === 'geral') {
-        quotesArray = geralQuotes;
+        currentQuotesArray = geralQuotes;
     } else {
-        quotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes, ...geralQuotes];
+        currentQuotesArray = [...professorQuotes, ...studentQuotes, ...externalAuthorQuotes, ...geralQuotes];
     }
 
-    const randomIndex = Math.floor(Math.random() * quotesArray.length);
-    const selectedQuote = quotesArray[randomIndex];
+    // Exibe a próxima frase na sequência
+    const selectedQuote = currentQuotesArray[currentIndex];
 
     const quoteElement = document.querySelector('.quote');
     const authorElement = document.querySelector('.author');
@@ -67,16 +79,28 @@ function displayNewQuote() {
     authorElement.textContent = selectedQuote.author;
     imageElement.src = selectedQuote.imageUrl;
     imageElement.style.display = 'block';
+
+    // Atualiza o índice para a próxima frase
+    currentIndex++;
+
+    // Se o índice exceder o número de frases, volta para o início
+    if (currentIndex >= currentQuotesArray.length) {
+        currentIndex = 0;
+    }
 }
 
 // Adicionar evento de clique ao botão "Nova Frase"
-document.getElementById('new-quote').addEventListener('click', displayNewQuote);
+document.getElementById('new-quote').addEventListener('click', displayNextQuote);
 
 // Exibir a primeira frase
-displayNewQuote();
+displayNextQuote();
 
 // Adicionar evento de mudança ao seletor de grupo de frases
-document.getElementById('quote-group').addEventListener('change', displayNewQuote);
+document.getElementById('quote-group').addEventListener('change', function() {
+    // Resetar o índice ao mudar de grupo para evitar mostrar a frase errada
+    currentIndex = 0;
+    displayNextQuote();
+});
 
 // Mostrar o modal
 function showModal() {

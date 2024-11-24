@@ -58,6 +58,13 @@ header {
     margin-bottom: 10px;
 }
 
+.quote-image {
+    max-width: 150px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
 .author {
     font-size: 18px;
     color: #888;
@@ -101,13 +108,6 @@ li, option, label, select {
 
 .botão {
     font-family: var(--fonte-principal);
-}
-
-.quote-image {
-    max-width: 150px;
-    margin-bottom: 20px;
-    margin: 0 auto;
-    border-radius: 5px;
 }
 
 .formulário-botão {
