@@ -21,14 +21,6 @@ header {
     text-align: center;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 478px;
-    padding-bottom: 5px;
-}
-
 /* Conteúdo principal */
 .quote-container {
     display: flex;
