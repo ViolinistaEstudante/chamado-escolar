@@ -44,7 +44,8 @@ const geralQuotes = [
     { quote: "Você é capaz de ir além do que imagina", author: "Pedagoga Direne", imageUrl: "https://github.com/user-attachments/assets/17a92454-ff8a-481f-9559-94a8f47b1788"},
     { quote: "É preciso amar as pessoas como se não houvesse amanhã.", author: "Pedagoga Elisa", imageUrl: "https://github.com/user-attachments/assets/d23b654c-de63-4745-93de-94c4a8fcd5f1"},
     { quote: "Pra quem tem fé, a vida não tem fim.", author: "Pedagoga Fernanda", imageUrl: "https://github.com/user-attachments/assets/8d3db4f3-5be3-4079-87a7-10eec261699f"},
-    {quote : "Todos os dias você se supera de alguma forma. Valorize suas pequenas vitórias", author: "Pedagoga Manuella", imageUrl: "https://github.com/user-attachments/assets/54f204f0-9c8c-436a-a3b7-8c430d7efef5"}
+    { quote: "Todos os dias você se supera de alguma forma. Valorize suas pequenas vitórias", author: "Pedagoga Manuella", imageUrl: "https://github.com/user-attachments/assets/54f204f0-9c8c-436a-a3b7-8c430d7efef5"},
+    { quote: "Cada dia é uma nova chance de aprender, crescer e construir o futuro que você deseja. Acredite no seu potencial e faça acontecer!", author: "Diretora Silvia", imageUrl: "https://github.com/user-attachments/assets/e8b155b0-67f5-4b4c-8ae8-dc9fb1f2152a"}
 ]
 
 // Variáveis globais para rastrear a posição atual da frase
